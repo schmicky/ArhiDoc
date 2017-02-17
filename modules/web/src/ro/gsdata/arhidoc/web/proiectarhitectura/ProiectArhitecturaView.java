@@ -30,15 +30,15 @@ public class ProiectArhitecturaView extends AbstractEditor<ProiectArhitectura> {
 
     public void runReport() {
 
-        Map<String, Object> reportParams = new HashMap<>();
+        Map<String,Object> reportParams = new HashMap<>();
         reportParams.put("entity", this.getItem());
-        // reportParams.put("additionalParam", "123");
+       // reportParams.put("additionalParam", "123");
 
         LoadContext<Report> lContext = new LoadContext<>(Report.class);
         lContext.setQueryString("select r from report$Report r where r.name like '%Proiect%'");
         List<Report> reports = dataService.loadList(lContext);
 
-        for (Report report : reports) {
+        for (Report report : reports){
             reportGuiManager.printReport(report, reportParams);
         }
     }
@@ -48,12 +48,12 @@ public class ProiectArhitecturaView extends AbstractEditor<ProiectArhitectura> {
 
         ProiectArhitectura item = (ProiectArhitectura) WindowParams.ITEM.getEntity(params);
 
-        //   showNotification(item.getBeneficiarNume(), NotificationType.TRAY);
+     //   showNotification(item.getBeneficiarNume(), NotificationType.TRAY);
         setCaption(item.getBeneficiarNume());
 
 
-        Action myaction = new BaseAction("test") {
-            @Override
+        Action myaction = new BaseAction("test"){
+           @Override
             public void actionPerform(Component component) {
                 runReport();
             }

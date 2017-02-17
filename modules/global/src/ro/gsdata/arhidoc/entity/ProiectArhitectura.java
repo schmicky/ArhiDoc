@@ -3,7 +3,6 @@ package ro.gsdata.arhidoc.entity;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Column;
-
 import com.haulmont.cuba.core.entity.StandardEntity;
 
 @Table(name = "ARHIDOC_PROIECT_ARHITECTURA")
