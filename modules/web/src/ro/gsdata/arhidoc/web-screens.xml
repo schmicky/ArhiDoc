@@ -3,8 +3,10 @@
     <include file="ro/gsdata/arhidoc/screens.xml"/>
     <screen id="arhidoc$ProiectArhitectura.edit"
             template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-edit.xml"/>
-    <screen id="arhidoc$ProiectArhitectura.browse"
-            template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-browse.xml"/>
     <screen id="arhidoc$ProiectArhitectura.view"
             template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-view.xml"/>
+    <screen id="arhidoc$ProiectArhitectura.browse"
+            template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-browse.xml"/>
+    <screen id="mainWindow"
+            template="ro/gsdata/arhidoc/web/proiectarhitectura/ext-mainwindow.xml"/>
 </screen-config>

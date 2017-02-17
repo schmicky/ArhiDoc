@@ -13,6 +13,8 @@ import java.util.Map;
 
 public class ProiectArhitecturaBrowse extends AbstractLookup {
 
+
+
     @Inject
     private GroupTable proiectArhitecturasTable;
 
