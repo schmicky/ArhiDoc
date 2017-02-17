@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="ro.gsdata.arhidoc.web.proiectarhitectura.ProiectArhitecturaEdit"
+        datasource="proiectArhitecturaDs"
+        focusComponent="dateArhitect"
+        messagesPack="ro.gsdata.arhidoc.web.proiectarhitectura">
+    <dsContext>
+        <datasource id="proiectArhitecturaDs"
+                    class="ro.gsdata.arhidoc.entity.ProiectArhitectura"
+                    view="_local"/>
+    </dsContext>
+    <dialogMode height="800"
+                width="1000"/>
+    <layout margin="true,false,true,false"
+            spacing="true">
+        <hbox spacing="true">
+            <fieldGroup id="dateArhitect"
+                        border="visible"
+                        caption="Date Proiectant"
+                        datasource="proiectArhitecturaDs"
+                        fieldCaptionWidth="200">
+                <column width="250px">
+                    <field id="arhitectNumeBirou"/>
+                    <field id="arhitectAdresa"/>
+                    <field id="arhitectPersoana"/>
+                    <field id="arhitectNrSemnatura"/>
+                    <field id="arhitectFilialaTeritoriala"/>
+                </column>
+            </fieldGroup>
+            <fieldGroup id="dateBeneficiar"
+                        border="visible"
+                        caption="Date Beneficiar"
+                        datasource="proiectArhitecturaDs"
+                        fieldCaptionWidth="200">
+                <column width="250px">
+                    <field id="beneficiarNume"/>
+                    <field id="beneficiarAdresa"/>
+                    <field id="beneficiarReprezentant"/>
+                    <field id="beneficiarCui"/>
+                    <field id="beneficiarTelefon"/>
+                    <field id="beneficiarCnp"/>
+                </column>
+            </fieldGroup>
+        </hbox>
+        <fieldGroup id="dateProiect"
+                    border="visible"
+                    caption="Date Proiect"
+                    datasource="proiectArhitecturaDs"
+                    fieldCaptionWidth="200">
+            <column width="250px">
+                <field id="proiectAdresa"/>
+                <field id="proiectCarteFunciara"/>
+                <field id="proiectFisaBunuluiImobil"/>
+                <field id="proiectNumarCadastral"/>
+            </column>
+            <column>
+                <field id="proiectSuprafata"/>
+                <field id="proiectLucrareExecutata"/>
+                <field id="proiectValoareRon"/>
+                <field id="proiectAutorizatiaExecutariiLucrarii"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions"
+               height="100%"
+               screen="editWindowActions"/>
+    </layout>
+</window>

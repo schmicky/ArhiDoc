@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="ro.gsdata.arhidoc.web.proiectarhitectura.ProiectArhitecturaView"
+        datasource="proiectArhitecturaDs"
+        focusComponent="fieldGroup"
+        messagesPack="ro.gsdata.arhidoc.web.proiectarhitectura">
+    <dsContext>
+        <datasource id="proiectArhitecturaDs"
+                    class="ro.gsdata.arhidoc.entity.ProiectArhitectura"
+                    view="_local"/>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <hbox spacing="true">
+            <fieldGroup id="fieldGroup"
+                        datasource="proiectArhitecturaDs"
+                        editable="false">
+                <column width="500">
+                    <field id="beneficiarNume"/>
+                    <field id="beneficiarCnp"/>
+                    <field id="beneficiarAdresa"/>
+                    <field id="proiectAdresa"/>
+                    <field id="proiectSuprafata"/>
+                    <field id="beneficiarTelefon"/>
+                    <field id="beneficiarReprezentant"/>
+                    <field id="beneficiarCui"/>
+                    <field id="proiectCarteFunciara"/>
+                    <field id="proiectFisaBunuluiImobil"/>
+                    <field id="proiectNumarCadastral"/>
+                    <field id="proiectLucrareExecutata"/>
+                    <field id="proiectValoareRon"/>
+                    <field id="proiectAutorizatiaExecutariiLucrarii"/>
+                    <field id="arhitectNumeBirou"/>
+                    <field id="arhitectAdresa"/>
+                    <field id="arhitectPersoana"/>
+                    <field id="arhitectNrSemnatura"/>
+                    <field id="arhitectFilialaTeritoriala"/>
+                </column>
+            </fieldGroup>
+            <button id="printCerere"
+                    caption="Print Cerere"/>
+        </hbox>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

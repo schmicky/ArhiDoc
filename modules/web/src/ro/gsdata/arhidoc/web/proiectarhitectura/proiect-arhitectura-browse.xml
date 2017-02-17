@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="ro.gsdata.arhidoc.web.proiectarhitectura.ProiectArhitecturaBrowse"
+        focusComponent="proiectArhitecturasTable"
+        lookupComponent="proiectArhitecturasTable"
+        messagesPack="ro.gsdata.arhidoc.web.proiectarhitectura">
+    <dsContext>
+        <groupDatasource id="proiectArhitecturasDs"
+                         class="ro.gsdata.arhidoc.entity.ProiectArhitectura"
+                         view="_local">
+            <query>
+                <![CDATA[select e from arhidoc$ProiectArhitectura e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout spacing="true">
+        <hbox spacing="true">
+            <groupTable id="proiectArhitecturasTable"
+                        height="100%"
+                        width="100%">
+                <actions>
+                    <action id="create"
+                            openType="DIALOG"/>
+                    <action id="edit"
+                            openType="DIALOG"/>
+                    <action id="remove"/>
+                    <action id="add"/>
+                </actions>
+                <columns>
+                    <column id="beneficiarNume"
+                            caption="Nume Beneficiar"/>
+                    <column id="beneficiarCnp"
+                            caption="CNP Beneficiar"/>
+                    <column id="proiectAdresa"
+                            caption="Adresa Proiect"/>
+                    <column id="proiectSuprafata"
+                            caption="Suprafata Proiect"/>
+                    <column id="beneficiarTelefon"/>
+                    <column id="beneficiarReprezentant"/>
+                    <column id="beneficiarCui"/>
+                    <column id="proiectCarteFunciara"/>
+                    <column id="proiectFisaBunuluiImobil"/>
+                    <column id="proiectNumarCadastral"/>
+                    <column id="proiectLucrareExecutata"/>
+                    <column id="proiectValoareRon"/>
+                    <column id="proiectAutorizatiaExecutariiLucrarii"/>
+                    <column id="arhitectNumeBirou"/>
+                    <column id="arhitectAdresa"/>
+                    <column id="arhitectPersoana"/>
+                    <column id="arhitectNrSemnatura"/>
+                    <column id="arhitectFilialaTeritoriala"/>
+                </columns>
+                <rows datasource="proiectArhitecturasDs"/>
+                <rowsCount/>
+                <buttonsPanel id="buttonsPanel"
+                              alwaysVisible="true">
+                    <button id="createBtn"
+                            action="proiectArhitecturasTable.create"/>
+                    <button id="editBtn"
+                            action="proiectArhitecturasTable.edit"/>
+                    <button id="removeBtn"
+                            action="proiectArhitecturasTable.remove"/>
+                </buttonsPanel>
+            </groupTable>
+            <groupBox caption="Primaria"
+                      spacing="true">
+                <hbox spacing="true">
+                    <label value="Cerere certificat de urbanism – persoana fizica"/>
+                </hbox>
+            </groupBox>
+        </hbox>
+    </layout>
+</window>

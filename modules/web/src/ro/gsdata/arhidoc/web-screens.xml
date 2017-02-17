@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="ro/gsdata/arhidoc/screens.xml"/>
+    <screen id="arhidoc$ProiectArhitectura.edit"
+            template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-edit.xml"/>
+    <screen id="arhidoc$ProiectArhitectura.browse"
+            template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-browse.xml"/>
+    <screen id="arhidoc$ProiectArhitectura.view"
+            template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-view.xml"/>
+</screen-config>
