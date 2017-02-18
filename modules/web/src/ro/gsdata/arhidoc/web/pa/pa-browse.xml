@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="ro.gsdata.arhidoc.web.pa.PABrowse"
+        focusComponent="pAsTable"
+        lookupComponent="pAsTable"
+        messagesPack="ro.gsdata.arhidoc.web.pa">
+    <dsContext>
+        <groupDatasource id="pAsDs"
+                         class="ro.gsdata.arhidoc.entity.PA"
+                         view="_local">
+            <query>
+                <![CDATA[select e from arhidoc$PA e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout spacing="true">
+        <hbox height="100%"
+              spacing="true"
+              width="100%">
+            <vbox id="stanga"
+                  align="TOP_CENTER"
+                  expand="pAsTable"
+                  height="100%"
+                  spacing="true">
+                <filter id="filter"
+                        applyTo="pAsTable"
+                        datasource="pAsDs">
+                    <properties include=".*"/>
+                </filter>
+                <groupTable id="pAsTable"
+                            width="100%">
+                    <actions>
+                        <action id="create"/>
+                        <action id="edit"/>
+                        <action id="remove"/>
+                    </actions>
+                    <columns>
+                        <column id="c01DenumireBeneficiarPf"/>
+                        <column id="a01DenumireProiect"/>
+                        <column id="b01AdresaAmplasament"/>
+                    </columns>
+                    <rows datasource="pAsDs"/>
+                    <rowsCount/>
+                    <buttonsPanel id="buttonsPanel"
+                                  alwaysVisible="true">
+                        <button id="createBtn"
+                                action="pAsTable.create"/>
+                        <button id="editBtn"
+                                action="pAsTable.edit"/>
+                        <button id="removeBtn"
+                                action="pAsTable.remove"/>
+                    </buttonsPanel>
+                </groupTable>
+            </vbox>
+            <vbox id="dreapta"
+                  spacing="true">
+                <scrollBox height="600px"
+                           orientation="vertical"
+                           spacing="true">
+                    <label id="labelProiect"
+                           height="30px"
+                           value="Alegeti un proiect"/>
+                    <groupBox caption="Primaria"
+                              showAsPanel="true"
+                              spacing="true">
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button id="printA01"
+                                    caption="Emite"
+                                    description="Daca ma apesi, castigi!"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                    </groupBox>
+                    <groupBox caption="Primaria"
+                              showAsPanel="true"
+                              spacing="true">
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    description="Daca ma apesi, castigi!"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                    </groupBox>
+                    <groupBox caption="Raja">
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <button caption="Emite"
+                                    height="20px"/>
+                            <label value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                        </flowBox>
+                    </groupBox>
+                    <groupBox caption="Enel"
+                              spacing="true">
+                        <flowBox spacing="true"
+                                 width="100%">
+                            <label property="TEXT"
+                                   value="Cerere certificat de urbanism – persoana fizica"
+                                   width="80%"/>
+                            <button caption="Emite"
+                                    height="20px"/>
+                        </flowBox>
+                        <groupBox orientation="horizontal"
+                                  spacing="true">
+                            <label align="MIDDLE_LEFT"
+                                   value="Label"/>
+                            <textField inputPrompt="TextField"/>
+                            <button caption="Button"/>
+                            <button caption="Button"/>
+                        </groupBox>
+                    </groupBox>
+                </scrollBox>
+            </vbox>
+        </hbox>
+    </layout>
+</window>

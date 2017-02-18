@@ -9,4 +9,10 @@
             template="ro/gsdata/arhidoc/web/proiectarhitectura/proiect-arhitectura-browse.xml"/>
     <screen id="mainWindow"
             template="ro/gsdata/arhidoc/web/proiectarhitectura/ext-mainwindow.xml"/>
+    <screen id="arhidoc$PA.browse"
+            template="ro/gsdata/arhidoc/web/pa/pa-browse.xml"/>
+    <screen id="arhidoc$PA.edit"
+            template="ro/gsdata/arhidoc/web/pa/pa-edit.xml"/>
+    <screen id="arhidoc$PA.a01.edit"
+            template="ro/gsdata/arhidoc/web/pa/pa-a01-edit.xml"/>
 </screen-config>

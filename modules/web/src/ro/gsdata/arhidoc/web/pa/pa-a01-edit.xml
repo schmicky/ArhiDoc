@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="ro.gsdata.arhidoc.web.pa.PaA01Edit"
+        datasource="pADs"
+        focusComponent="fieldGroup"
+        messagesPack="ro.gsdata.arhidoc.web.pa">
+    <dsContext>
+        <datasource id="pADs"
+                    class="ro.gsdata.arhidoc.entity.PA"
+                    view="_local"/>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="pADs">
+            <column width="250px">
+                <field id="c01DenumireBeneficiarPf"/>
+                <field id="c06CnpBeneficiarPf"/>
+                <field id="c04AdresaBeneficiarPf"/>
+                <field id="c12TelefonBeneficiar"/>
+                <field id="c09EmailBeneficiar"/>
+                <field id="c03CalitatePf"/>
+                <field id="a01DenumireProiect"/>
+                <field id="b01AdresaAmplasament"/>
+                <field id="b14SterenMasuratori"/>
+                <field id="f01EmitentCu"/>
+            </column>
+        </fieldGroup>
+        <buttonsPanel>
+            <button id="cancelButton"
+                    caption="Cancel"/>
+            <button id="printButton"
+                    caption="Print Cerere"/>
+        </buttonsPanel>
+    </layout>
+</window>

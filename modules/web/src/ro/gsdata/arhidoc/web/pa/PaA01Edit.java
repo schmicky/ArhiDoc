@@ -1,27 +1,34 @@
-package ro.gsdata.arhidoc.web.proiectarhitectura;
+package ro.gsdata.arhidoc.web.pa;
 
 import com.haulmont.cuba.core.app.DataService;
 import com.haulmont.cuba.core.global.AppBeans;
 import com.haulmont.cuba.core.global.LoadContext;
-import com.haulmont.cuba.gui.WindowParams;
 import com.haulmont.cuba.gui.components.AbstractEditor;
-import com.haulmont.cuba.gui.components.Action;
 import com.haulmont.cuba.gui.components.Button;
 import com.haulmont.cuba.gui.components.Component;
 import com.haulmont.cuba.gui.components.actions.BaseAction;
+import com.haulmont.cuba.gui.data.DsContext;
 import com.haulmont.reports.entity.Report;
 import com.haulmont.reports.gui.ReportGuiManager;
-import ro.gsdata.arhidoc.entity.ProiectArhitectura;
+import ro.gsdata.arhidoc.entity.PA;
 
 import javax.inject.Inject;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ProiectArhitecturaView extends AbstractEditor<ProiectArhitectura> {
+public class PaA01Edit extends AbstractEditor<PA> {
 
     @Inject
-    private Button printCerere;
+    DsContext dsContext;
+
+
+    @Inject
+    Button printButton;
+
+
+    @Inject
+    Button cancelButton;
 
     @Inject
     protected DataService dataService;
@@ -45,23 +52,28 @@ public class ProiectArhitecturaView extends AbstractEditor<ProiectArhitectura> {
 
     @Override
     public void init(Map<String, Object> params) {
-
-        ProiectArhitectura item = (ProiectArhitectura) WindowParams.ITEM.getEntity(params);
-
-     //   showNotification(item.getBeneficiarNume(), NotificationType.TRAY);
-        setCaption(item.getBeneficiarNume());
-
-
-        Action myaction = new BaseAction("test"){
-           @Override
-            public void actionPerform(Component component) {
-                runReport();
-            }
-
-        };
-
-        printCerere.setAction(myaction);
-
         super.init(params);
+
+        printButton.setAction(new BaseAction("print") {
+            @Override
+            public void actionPerform(Component component) {
+                dsContext.commit();
+                runReport();
+               close("arhidoc$PA.a01.edit");
+
+
+            }
+        });
+
+        cancelButton.setAction(new BaseAction("cancel") {
+            @Override
+            public void actionPerform(Component component) {
+                close("arhidoc$PA.a01.edit");
+
+
+            }
+        });
+
+
     }
 }

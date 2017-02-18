@@ -4,5 +4,6 @@
           insertBefore="administration">
         <item id="arhidoc$ProiectArhitectura.browse"
               openType="NEW_TAB"/>
+        <item id="arhidoc$PA.browse"/>
     </menu>
 </menu-config>

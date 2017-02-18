@@ -4,5 +4,6 @@
     <persistence-unit name="ArhiDoc"
                       transaction-type="RESOURCE_LOCAL">
         <class>ro.gsdata.arhidoc.entity.ProiectArhitectura</class>
+        <class>ro.gsdata.arhidoc.entity.PA</class>
     </persistence-unit>
 </persistence>
