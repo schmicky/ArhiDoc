@@ -10,25 +10,37 @@
                     class="ro.gsdata.arhidoc.entity.PA"
                     view="_local"/>
     </dsContext>
-    <dialogMode height="600"
+    <dialogMode height="800"
                 width="800"/>
     <layout spacing="true">
         <fieldGroup id="fieldGroup"
-                    datasource="pADs">
+                    datasource="pADs"
+                    fieldCaptionWidth="300px">
             <column width="250px">
-                <field id="c01DenumireBeneficiarPf"/>
-                <field id="c06CnpBeneficiarPf"/>
-                <field id="c04AdresaBeneficiarPf"/>
-                <field id="c12TelefonBeneficiar"/>
-                <field id="c09EmailBeneficiar"/>
-                <field id="c03CalitatePf"/>
-                <field id="a01DenumireProiect"/>
-                <field id="b01AdresaAmplasament"/>
-                <field id="b14SterenMasuratori"/>
-                <field id="f01EmitentCu"/>
+                <field id="c01DenumireBeneficiarPf"
+                       required="true"/>
+                <field id="c06CnpBeneficiarPf"
+                       required="true"/>
+                <field id="c04AdresaBeneficiarPf"
+                       required="true"/>
+                <field id="c12TelefonBeneficiar"
+                       required="true"/>
+                <field id="c09EmailBeneficiar"
+                       required="true"/>
+                <field id="c03CalitatePf"
+                       required="true"/>
+                <field id="a01DenumireProiect"
+                       required="true"/>
+                <field id="b01AdresaAmplasament"
+                       required="true"/>
+                <field id="b14SterenMasuratori"
+                       required="true"/>
+                <field id="f01EmitentCu"
+                       description="Explicatii"
+                       required="true"/>
             </column>
         </fieldGroup>
-        <buttonsPanel>
+        <buttonsPanel align="BOTTOM_CENTER">
             <button id="cancelButton"
                     caption="Cancel"/>
             <button id="printButton"

@@ -10,6 +10,6 @@ public class ExtAppMainWindow extends AppMainWindow {
         super.ready();
 
         // Then load the initial screen
-        openWindow("arhidoc$ProiectArhitectura.browse", WindowManager.OpenType.THIS_TAB);
+        openWindow("arhidoc$PA.browse", WindowManager.OpenType.THIS_TAB);
     }
 }

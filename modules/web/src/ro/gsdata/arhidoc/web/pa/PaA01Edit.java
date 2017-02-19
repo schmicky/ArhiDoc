@@ -42,7 +42,7 @@ public class PaA01Edit extends AbstractEditor<PA> {
         // reportParams.put("additionalParam", "123");
 
         LoadContext<Report> lContext = new LoadContext<>(Report.class);
-        lContext.setQueryString("select r from report$Report r where r.name like '%Proiect%'");
+        lContext.setQueryString("select r from report$Report r where r.name like '%A01%'");
         List<Report> reports = dataService.loadList(lContext);
 
         for (Report report : reports){
