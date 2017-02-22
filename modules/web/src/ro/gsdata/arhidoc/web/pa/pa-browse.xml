@@ -56,53 +56,98 @@
                 </groupTable>
             </vbox>
             <vbox id="dreapta"
+                  height="100%"
                   spacing="true">
-                <scrollBox height="600px"
+                <scrollBox height="100%"
                            orientation="vertical"
                            spacing="true">
                     <label id="labelProiect"
                            height="30px"
                            value="Alegeti un proiect"/>
                     <groupBox caption="Primaria"
+                              description="Fara descriere"
                               showAsPanel="true"
                               spacing="true">
-                        <flowBox spacing="true"
-                                 width="100%">
-                            <button id="printA01"
-                                    caption="Emite"
-                                    description="Daca ma apesi, castigi!"
-                                    height="20px"/>
-                            <label value="Cerere certificat de urbanism – persoana fizica"
-                                   width="80%"/>
-                        </flowBox>
-                        <flowBox spacing="true"
-                                 width="100%">
-                            <button caption="Emite"
-                                    height="20px"/>
-                            <label value="Va urma"
-                                   width="80%"/>
-                        </flowBox>
-                        <flowBox spacing="true"
-                                 width="100%">
-                            <button caption="Emite"
-                                    height="20px"/>
-                            <label value="Va urma"
-                                   width="80%"/>
-                        </flowBox>
-                        <flowBox spacing="true"
-                                 width="100%">
-                            <button caption="Emite"
-                                    height="20px"/>
-                            <label value="Va urma"
-                                   width="80%"/>
-                        </flowBox>
-                        <flowBox spacing="true"
-                                 width="100%">
-                            <button caption="Emite"
-                                    height="20px"/>
-                            <label value="Va urma"
-                                   width="80%"/>
-                        </flowBox>
+                        <groupBox id="certificatUrbanism"
+                                  caption="A01 Certificat Urbanism"
+                                  collapsable="true"
+                                  collapsed="true"
+                                  width="600px">
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="printA01a"
+                                        caption="Emite"
+                                        description="Daca ma apesi, castigi!"
+                                        height="20px"/>
+                                <label value="Cerere – Persoana Fizica"
+                                       width="80%"/>
+                            </flowBox>
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="printA01b"
+                                        caption="Emite"
+                                        height="20px"/>
+                                <label value="Cerere – Persoana Juridica"
+                                       width="80%"/>
+                            </flowBox>
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="printA01c"
+                                        caption="Emite"
+                                        height="20px"/>
+                                <label value="Opis – Persoana Fizica"
+                                       width="80%"/>
+                            </flowBox>
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="printA01d"
+                                        caption="Emite"
+                                        height="20px"/>
+                                <label value="Opis – Persoana Juridica"
+                                       width="80%"/>
+                            </flowBox>
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="printA01e"
+                                        caption="Emite"
+                                        height="20px"/>
+                                <label value="Memoriu – Persoana Fizica"
+                                       width="80%"/>
+                            </flowBox>
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="printA01f"
+                                        caption="Emite"
+                                        height="20px"/>
+                                <label value="Memoriu – Persoana Juridica"
+                                       width="80%"/>
+                            </flowBox>
+                        </groupBox>
+                        <groupBox id="altCertificat"
+                                  caption="A02 Alt certificat"
+                                  collapsable="true"
+                                  collapsed="true"
+                                  spacing="true"
+                                  stylename="light"
+                                  width="600px">
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="button_1"
+                                        caption="Emite"
+                                        description="Daca ma apesi, castigi!"
+                                        height="20px"/>
+                                <label value="Cerere certificat de urbanism – Persoana Fizica"
+                                       width="80%"/>
+                            </flowBox>
+                            <flowBox spacing="true"
+                                     width="100%">
+                                <button id="button_2"
+                                        caption="Emite"
+                                        height="20px"/>
+                                <label value="Cerere certificat de urbanism – Persoana Juridica"
+                                       width="80%"/>
+                            </flowBox>
+                        </groupBox>
                     </groupBox>
                     <groupBox caption="Primaria"
                               showAsPanel="true"

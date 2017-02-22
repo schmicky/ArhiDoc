@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PaA01Edit extends AbstractEditor<PA> {
+public class PaA01bEdit extends AbstractEditor<PA> {
 
     @Inject
     DsContext dsContext;
@@ -42,7 +42,7 @@ public class PaA01Edit extends AbstractEditor<PA> {
         // reportParams.put("additionalParam", "123");
 
         LoadContext<Report> lContext = new LoadContext<>(Report.class);
-        lContext.setQueryString("select r from report$Report r where r.name like '%A01%'");
+        lContext.setQueryString("select r from report$Report r where r.name like '%A01B%'");
         List<Report> reports = dataService.loadList(lContext);
 
         for (Report report : reports){

@@ -184,6 +184,7 @@ configure(webModule) {
         appName = 'app'
         appJars('app-global', 'app-gui', 'app-web')
     }
+	
 }
 
 
@@ -209,6 +210,10 @@ task buildWar(type: CubaWarBuilding) {
     appHome = '..'
     appProperties = ['cuba.automaticDatabaseUpdate': 'true']
     singleWar = false
+}
+
+task debugWidgetSet(type: CubaWidgetSetDebug) {
+    widgetSetClass = 'ro.gsdata.arhidoc.web.toolkit.ui.AppWidgetSet'
 }
 
 task wrapper(type: Wrapper) {

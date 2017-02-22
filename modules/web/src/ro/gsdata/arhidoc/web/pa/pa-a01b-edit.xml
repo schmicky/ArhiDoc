@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
-        caption="msg://editorCaption"
-        class="ro.gsdata.arhidoc.web.pa.PaA01Edit"
+        caption="Emite Cerere Certificat Urbanism - Persoana Juridica"
+        class="ro.gsdata.arhidoc.web.pa.PaA01bEdit"
         datasource="pADs"
         focusComponent="fieldGroup"
         messagesPack="ro.gsdata.arhidoc.web.pa">
@@ -10,9 +10,10 @@
                     class="ro.gsdata.arhidoc.entity.PA"
                     view="_local"/>
     </dsContext>
-    <dialogMode height="800"
-                width="800"/>
-    <layout spacing="true">
+    <dialogMode height="700px"
+                width="600"/>
+    <layout expand="spacer"
+            spacing="true">
         <fieldGroup id="fieldGroup"
                     datasource="pADs"
                     fieldCaptionWidth="300px">
@@ -23,6 +24,7 @@
                        required="true"/>
                 <field id="c04AdresaBeneficiarPf"
                        required="true"/>
+                <field id="c05AdresaBeneficiarPj"/>
                 <field id="c12TelefonBeneficiar"
                        required="true"/>
                 <field id="c09EmailBeneficiar"
@@ -40,7 +42,8 @@
                        required="true"/>
             </column>
         </fieldGroup>
-        <buttonsPanel align="BOTTOM_CENTER">
+        <label id="spacer"/>
+        <buttonsPanel align="TOP_CENTER">
             <button id="cancelButton"
                     caption="Cancel"/>
             <button id="printButton"

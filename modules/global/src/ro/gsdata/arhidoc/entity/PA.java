@@ -1,10 +1,11 @@
 package ro.gsdata.arhidoc.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Column;
-import javax.persistence.Lob;
 import com.haulmont.cuba.core.entity.StandardEntity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Lob;
+import javax.persistence.Table;
 
 @Table(name = "ARHIDOC_PA")
 @Entity(name = "arhidoc$PA")
@@ -98,6 +99,10 @@ public class PA extends StandardEntity {
 
     @Column(name = "A20_STERASE_ACOPERITE")
     protected String a20SteraseAcoperite;
+
+    @Lob
+    @Column(name = "A25_FAZA_PROIECT")
+    protected String a25FazaProiect;
 
     @Lob
     @Column(name = "B01_ADRESA_AMPLASAMENT")
@@ -324,6 +329,79 @@ public class PA extends StandardEntity {
 
     @Column(name = "H02_DESEURI")
     protected String h02Deseuri;
+
+    @Lob
+    @Column(name = "A21_SSPATII_VERZI")
+    protected String a21SspatiiVerzi;
+
+    @Lob
+    @Column(name = "A22_SSPATII_MINERALE")
+    protected String a22SspatiiMinerale;
+
+    @Lob
+    @Column(name = "A23_SAPE")
+    protected String a23Sape;
+
+    @Lob
+    @Column(name = "A24_STROTUARE")
+    protected String a24Strotuare;
+
+    @Lob
+    @Column(name = "A26_TOTAL_NR_PARCARI")
+    protected String a26TotalNrParcari;
+
+    @Lob
+    @Column(name = "A27_STERASE_ACOPERITE")
+    protected String a27SteraseAcoperite;
+
+    public void setA21SspatiiVerzi(String a21SspatiiVerzi) {
+        this.a21SspatiiVerzi = a21SspatiiVerzi;
+    }
+
+    public String getA21SspatiiVerzi() {
+        return a21SspatiiVerzi;
+    }
+
+    public void setA22SspatiiMinerale(String a22SspatiiMinerale) {
+        this.a22SspatiiMinerale = a22SspatiiMinerale;
+    }
+
+    public String getA22SspatiiMinerale() {
+        return a22SspatiiMinerale;
+    }
+
+    public void setA23Sape(String a23Sape) {
+        this.a23Sape = a23Sape;
+    }
+
+    public String getA23Sape() {
+        return a23Sape;
+    }
+
+    public void setA24Strotuare(String a24Strotuare) {
+        this.a24Strotuare = a24Strotuare;
+    }
+
+    public String getA24Strotuare() {
+        return a24Strotuare;
+    }
+
+    public void setA26TotalNrParcari(String a26TotalNrParcari) {
+        this.a26TotalNrParcari = a26TotalNrParcari;
+    }
+
+    public String getA26TotalNrParcari() {
+        return a26TotalNrParcari;
+    }
+
+    public void setA27SteraseAcoperite(String a27SteraseAcoperite) {
+        this.a27SteraseAcoperite = a27SteraseAcoperite;
+    }
+
+    public String getA27SteraseAcoperite() {
+        return a27SteraseAcoperite;
+    }
+
 
     public void setA01DenumireProiect(String a01DenumireProiect) {
         this.a01DenumireProiect = a01DenumireProiect;
@@ -1021,7 +1099,16 @@ public class PA extends StandardEntity {
         return e21SuTotal;
     }
 
+    public String getA25FazaProiect() {
+        return a25FazaProiect;
+    }
+
+    public void setA25FazaProiect(String a25FazaProiect) {
+        this.a25FazaProiect = a25FazaProiect;
+    }
+
     public void setE22NiveluriExistente(String e22NiveluriExistente) {
+
         this.e22NiveluriExistente = e22NiveluriExistente;
     }
 

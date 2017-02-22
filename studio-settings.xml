@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<studio>
+    <screenDesigner>
+        <screen module="web"
+                presentSize="1440x900"
+                previewMode="true"
+                reference="ro/gsdata/arhidoc/web/pa/pa-browse.xml"/>
+    </screenDesigner>
+</studio>

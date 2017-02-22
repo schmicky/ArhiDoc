@@ -13,6 +13,14 @@
             template="ro/gsdata/arhidoc/web/pa/pa-browse.xml"/>
     <screen id="arhidoc$PA.edit"
             template="ro/gsdata/arhidoc/web/pa/pa-edit.xml"/>
-    <screen id="arhidoc$PA.a01.edit"
-            template="ro/gsdata/arhidoc/web/pa/pa-a01-edit.xml"/>
+    <screen id="arhidoc$PA.a01a.edit"
+            template="ro/gsdata/arhidoc/web/pa/pa-a01a-edit.xml"/>
+    <screen id="arhidoc$PA.a01c.edit"
+            template="ro/gsdata/arhidoc/web/pa/pa-a01c-edit.xml"/>
+    <screen id="arhidoc$PA.a01d.edit"
+            template="ro/gsdata/arhidoc/web/pa/pa-a01d-edit.xml"/>
+    <screen id="arhidoc$PA.a01b.edit"
+            template="ro/gsdata/arhidoc/web/pa/pa-a01b-edit.xml"/>
+    <screen id="arhidoc$PA.a01f.edit"
+            template="ro/gsdata/arhidoc/web/pa/pa-a01f.xml"/>
 </screen-config>

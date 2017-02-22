@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="Emite Cerere Certificat Urbanism - Persoana Fizica"
+        class="ro.gsdata.arhidoc.web.pa.PaA01aEdit"
+        datasource="pADs"
+        focusComponent="fieldGroup"
+        messagesPack="ro.gsdata.arhidoc.web.pa">
+    <dsContext>
+        <datasource id="pADs"
+                    class="ro.gsdata.arhidoc.entity.PA"
+                    view="_local"/>
+    </dsContext>
+    <dialogMode height="700px"
+                width="600"/>
+    <layout expand="spacer"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="pADs"
+                    fieldCaptionWidth="300px">
+            <column width="250px">
+                <field id="c01DenumireBeneficiarPf"
+                       required="true"/>
+                <field id="c06CnpBeneficiarPf"
+                       required="true"/>
+                <field id="c04AdresaBeneficiarPf"
+                       required="true"/>
+                <field id="c12TelefonBeneficiar"
+                       required="true"/>
+                <field id="c09EmailBeneficiar"
+                       required="true"/>
+                <field id="c03CalitatePf"
+                       required="true"/>
+                <field id="a01DenumireProiect"
+                       required="true"/>
+                <field id="b01AdresaAmplasament"
+                       required="true"/>
+                <field id="b14SterenMasuratori"
+                       required="true"/>
+                <field id="f01EmitentCu"
+                       description="Explicatii"
+                       required="true"/>
+            </column>
+        </fieldGroup>
+        <label id="spacer"/>
+        <buttonsPanel align="TOP_CENTER">
+            <button id="cancelButton"
+                    caption="Cancel"/>
+            <button id="printButton"
+                    caption="Print Cerere"/>
+        </buttonsPanel>
+    </layout>
+</window>

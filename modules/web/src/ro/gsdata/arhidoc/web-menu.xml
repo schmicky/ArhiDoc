@@ -3,7 +3,8 @@
     <menu id="application"
           insertBefore="administration">
         <!--<item id="arhidoc$ProiectArhitectura.browse"-->
-              <!--openType="NEW_TAB"/>-->
-        <item id="arhidoc$PA.browse"  openType="NEW_TAB"/>
+        <!--openType="NEW_TAB"/>-->
+        <item id="arhidoc$PA.browse"
+              openType="NEW_TAB"/>
     </menu>
 </menu-config>

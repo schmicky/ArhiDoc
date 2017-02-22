@@ -67,6 +67,7 @@ create table ARHIDOC_PA (
     A18_SAPE varchar(255),
     A19_STROTUARE varchar(255),
     A20_STERASE_ACOPERITE varchar(255),
+    A25_FAZA_PROIECT longtext,
     B01_ADRESA_AMPLASAMENT longtext,
     B02_NR_CADASTRAL varchar(255),
     B03_CARTE_FUNCIARA varchar(255),
@@ -142,6 +143,12 @@ create table ARHIDOC_PA (
     G05_ACCES_AUTO varchar(255),
     H01_COMPONENTA_DOSAR varchar(255),
     H02_DESEURI varchar(255),
+    A21_SSPATII_VERZI longtext,
+    A22_SSPATII_MINERALE longtext,
+    A23_SAPE longtext,
+    A24_STROTUARE longtext,
+    A26_TOTAL_NR_PARCARI longtext,
+    A27_STERASE_ACOPERITE longtext,
     --
     primary key (ID)
 )^

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="Memoriu - Persoana Juridica"
+        class="ro.gsdata.arhidoc.web.pa.PaA01fEdit"
+        datasource="pADs"
+        focusComponent="fieldGroup"
+        messagesPack="ro.gsdata.arhidoc.web.pa">
+    <dsContext>
+        <datasource id="pADs"
+                    class="ro.gsdata.arhidoc.entity.PA"
+                    view="_local"/>
+    </dsContext>
+    <dialogMode height="700px"
+                width="600"/>
+    <layout expand="scrollBox"
+            spacing="true">
+        <scrollBox id="scrollBox">
+            <fieldGroup id="fieldGroup"
+                        datasource="pADs"
+                        fieldCaptionWidth="300px">
+                <column width="250px">
+                    <field id="a01DenumireProiect"
+                           required="true"/>
+                    <field id="b01AdresaAmplasament"
+                           required="true"/>
+                    <field id="d02DenumireArhitectPj"
+                           required="true"/>
+                    <field id="a02NrProiect"/>
+                    <field id="c01DenumireBeneficiarPf"/>
+                    <field id="c03CalitatePf"/>
+                    <field id="c02DenumireBeneficiarPj"/>
+                    <field id="d01DenumireArhitectPf"/>
+                    <field id="a25FazaProiect"/>
+                    <field id="b15ActProprietate"/>
+                    <field id="b02NrCadastral"/>
+                    <field id="b03CarteFunciara"
+                           required="true"/>
+                    <field id="b13SterenActe"
+                           required="true"/>
+                    <field id="b14SterenMasuratori"
+                           required="true"/>
+                    <field id="a16SspatiiVerzi"/>
+                    <field id="b05VecinNord"/>
+                    <field id="b06VecinNordEst"/>
+                    <field id="b07VecinNordVest"/>
+                    <field id="b08VecinSud"/>
+                    <field id="b09VecinSudEst"/>
+                    <field id="b10VecinSudVest"/>
+                    <field id="b11VecinEst"/>
+                    <field id="b12VecinVest"/>
+                    <field id="b16StadiuAmplasament"/>
+                    <field id="a07FunctiuneProiect"/>
+                    <field id="e23NiveluriPropuse"/>
+                    <field id="a13Hcornisa"/>
+                    <field id="a12Hmax"/>
+                    <field id="a09NrParcaje"/>
+                    <field id="a10NrGaraje"/>
+                    <field id="a26TotalNrParcari"/>
+                    <field id="a08LungimeImprejmuire"/>
+                    <field id="e02ScExistent"/>
+                    <field id="e03SdExistent"/>
+                    <field id="e04PotExistent"/>
+                    <field id="e05CutExistent"/>
+                    <field id="e06ScPropus"/>
+                    <field id="e07SdPropus"/>
+                    <field id="e08PotPropus"/>
+                    <field id="e09CutPropus"/>
+                    <field id="e22NiveluriExistente"/>
+                </column>
+            </fieldGroup>
+        </scrollBox>
+        <label id="spacer"/>
+        <buttonsPanel align="TOP_CENTER">
+            <button id="cancelButton"
+                    align="MIDDLE_CENTER"
+                    caption="?!"
+                    height="20px"
+                    icon="icons/eye-plus.png"
+                    width="20px"/>
+            <button id="printButton"
+                    caption="Print Opis"/>
+        </buttonsPanel>
+    </layout>
+</window>
